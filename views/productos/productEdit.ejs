@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  </head>
+<body>
+
+    <%- include ("../partials/navbar")%>
+
+   <main>
+    <section>
+        <form action="/productos/edit/<%=prodEdit.id%>?_method=PATCH" method="POST" enctype="multipart/form-data" class="formulario">
+              <label for="marca">Marca</label><br>
+              <input type="text" name="marca" placeholder="<%=prodEdit.marca%>"><br>
+
+              <label for="modelo">Modelo</label><br>
+              <input type="text" name="modelo" placeholder="<%=prodEdit.modelo%>"><br>
+
+              <label for="descripcion">Descripcion</label><br>
+              <input type="text" name="descripcion" placeholder="<%=prodEdit.descripcion%>"><br>
+
+              <label for="precio">Precio</label><br>
+              <input type="number" name="precio" placeholder="<%=prodEdit.precio%>"><br>
+
+              <label for="imagen">Imagen</label><br>
+              <input type="file" name="imagen" placeholder="<%=prodEdit.imagen%>" class="file"><br>
+
+              <button class="button" type="submit">actualizar</button>
+        </form>
+    </section>
+   </main>
+
+   <%- include ("../partials/footer")%>
+</body>
+</html>

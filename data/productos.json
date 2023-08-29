@@ -1,0 +1,42 @@
+[
+ {
+  "id": 1,
+  "marca": "Machete",
+  "modelo": "Cepillo Alizador",
+  "descripcion": "Cepillo alizador electrico con cerdas ceramicas para barba ",
+  "precio": "99",
+  "imagen": "cepillo-alizador-barba.jpg"
+ },
+ {
+  "id": "2",
+  "marca": "Machete",
+  "modelo": "Cepillo para Barba",
+  "descripcion": "Cepillo de Cerdas naturales para Barba",
+  "precio": "100",
+  "imagen": "cepillo-barba.jpg"
+ },
+ {
+  "id": 3,
+  "marca": "Machete",
+  "modelo": "Cera Capilar",
+  "descripcion": "Cera capilar para cabello y barba",
+  "precio": "99",
+  "imagen": "cera-cabello-barba.jpg"
+ },
+ {
+  "id": 4,
+  "marca": "Machete",
+  "modelo": "Kit Peines Textura",
+  "descripcion": "Peines para texturizado de cabellos",
+  "precio": "99",
+  "imagen": "kit-peines-textura.jpg"
+ },
+ {
+  "id": 5,
+  "marca": "Machete",
+  "modelo": "Shampoo ",
+  "descripcion": "Shampoo hidratante para el cuidado de la barbar",
+  "precio": "99",
+  "imagen": "shampoo-barba.jpg"
+ }
+]

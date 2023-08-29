@@ -1,0 +1,37 @@
+.formulario{
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border:3px solid crimson;
+}
+.formulario label{
+    margin: 10px 0;
+    font-size: 1.3rem;
+    font-weight: bold
+}
+.formulario input{
+    border:1px solid grey;
+}
+.button{
+    background-color: crimson;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 2px 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold
+}
+.file{
+    max-width: 300px;
+}
+@media (min-width: 501px){
+    .formulario{
+        max-width: 400px;
+        margin: 10px auto;
+
+    }
+    .file{
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbería Alura</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  </head>
+<body>
+
+    <%- include ("../partials/navbar")%>
+
+   <main>
+     <section>
+      <button class="button"><a href="/productos/create">Nuevo Producto</a></button>
+      <ul class="productos">
+        <% productos.map(producto =>{%>
+          <a href="/productos/detalle/<%=producto.id%>">
+            <li class="producto">
+              <img src="images/productos/<%=producto.imagen%>" />
+              <h2><%=producto.modelo%></h2>
+              <h4><%=producto.marca%></h4>
+            <p class="producto-descripcion">
+              <%=producto.descripcion%>
+            </p>
+            <p class="producto-precio">$ <%=producto.precio%></p>
+          </li>
+        </a>
+          <%})%>
+      </ul>
+    </section>
+   </main>
+
+   <%- include ("../partials/footer")%>
+</body>
+</html>

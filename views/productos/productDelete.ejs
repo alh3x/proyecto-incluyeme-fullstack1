@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eliminar Producto</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  </head>
+<body>
+
+    <%- include ("../partials/navbar")%>
+
+   <main>
+    <section class="editar-producto">
+      <div >
+          <li class="producto">
+            <h1>DESEA ELIMINAR ESTE PRODUCTO???</h1>
+            <h2><%=proDelete.modelo%></h2>
+            <img src="/images/productos/<%=proDelete.imagen%>" />
+          </li>
+      </div>
+      <form action="/productos/delete/<%=proDelete.id%>?_method=DELETE" method="POST" class="botones">
+        <button type="submit" class="button">Borrar</button>
+        <button class="button"><a href="/productos">Productos</a></button>
+      </form>
+    </section>
+   </main>
+
+   <%- include ("../partials/footer")%>
+</body>
+</html>

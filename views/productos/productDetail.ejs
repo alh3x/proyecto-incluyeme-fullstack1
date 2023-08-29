@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle Producto</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  </head>
+<body>
+
+    <%- include ("../partials/navbar")%>
+
+   <main>
+    <section class="editar-producto">
+      <div >
+          <li class="producto">
+            <h2><%=productoDetail.modelo%></h2>
+            <img src="/images/productos/<%=productoDetail.imagen%>" />
+            <h4><%=productoDetail.marca%></h4>
+            <p class="producto-descripcion">
+              <%=productoDetail.descripcion%>
+            </p>
+            <p class="producto-precio">$ <%=productoDetail.precio%></p>
+          </li>
+      </div>
+      <div class="botones">
+        <button class="button"><a href="/productos/edit/<%=productoDetail.id%>">Editar</a></button>
+        <button class="button"><a href="/productos/delete/<%=productoDetail.id%>">Borrar</a></button>
+        <button class="button"><a href="/productos">Productos</a></button>
+      </div>
+    </section>
+   </main>
+
+   <%- include ("../partials/footer")%>
+</body>
+</html>

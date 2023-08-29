@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nombre":"Corte de cabello",
+        "servicio": "Con tijera o máquina, a gusto del cliente",
+        "modelo": "adulto",
+        "imagen":"/images/servicios/cabello.jpg",
+        "precio": "300"
+    },
+    {
+        "id": 2,
+        "nombre":"Recorte de barba",
+        "servicio": "Corte y diseño profesional de barba",
+        "modelo": "adulto",
+        "imagen":"/images/servicios/barba.jpg",
+        "precio": "300"
+    },
+    {
+        "id": 3,
+        "nombre":"Cabello y Barba",
+        "servicio":"Paquete completo de cabello y arba",
+        "modelo": "adulto",
+        "imagen":"/images/servicios/cabello+barba.jpg",
+        "precio": "300"
+    },
+    {
+        "id": 4,
+        "nombre":"corte de cabello",
+        "servicio": "Corte de cabello para niños",
+        "modelo": "niño",
+        "imagen":"/images/servicios/icons/icon2.png",
+        "precio": "300"
+    }
+]
